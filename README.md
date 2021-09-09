@@ -11,12 +11,14 @@ Download pretrained weight files from [here](https://drive.google.com/drive/fold
 
 <br>
 
-# Model Comparison
+# Yolov4 Model Comparison
 
-| Model            | Precision   | Recall      | F1-score    | mAP@0.5     |  Average IoU | Output |
-| ---------------- | ----------- |------------ |------------ |------------ |------------   | ---------- |
-| Yolov4-Tiny-Pretrained      |  0.35       |  0.1        | 0.15        | 0.1553      | 24.10        |   [chart](trainOutput/tiny-pretrained-chart.png)  [terminal](trainOutput/tiny-pretrained-terminal.png)     |
-| Yolov4-Tiny-Not-Pretrained      |  0.35       |  0.1        | 0.15        | 0.1553      | 23.85        |   [chart](trainOutput/tiny-no-pretrained-chart.png)  [terminal](trainOutput/tiny-no-pretrained-terminal.png)     |
+## Comparison of Resolution (Trained on Google Colab with nvidia P100 and V100)
+
+| Model | Resolution| Pretrained Weight | Precision | Recall | F1-score | mAP@0.5 | Avg IoU | Output |
+| ----- | --------- |------------------ |---------- |------- |--------- | ------- | ------- | ------ |
+| Tiny  | 640 | Yes | 0.33 | 0.07 | 0.12 | 0.1400 | 22.19 | [terminal](trainOutput/yolov4-tiny-pretrained-colab-640.png) |
+| Tiny  | 640 | No  | 0.43 | 0.10 | 0.17 | 0.1194 | 28.81 | [terminal](trainOutput/yolov4-tiny-no-pretrained-colab-640.png) |
 
 <br>
 
