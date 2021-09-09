@@ -16,7 +16,7 @@ Download pretrained weight files from [here](https://drive.google.com/drive/fold
 ## Comparison of Resolution (Trained on Google Colab with nvidia P100 and V100)
 
 | Model | Resolution | Batch | Subdivisions | Pretrained | Precision | Recall | F1 score | mAP @0.5 | Avg IoU | Output |
-| ----- | --------- |------------------ |---------- |------- |--------- | ------- | ------- | ------ |
+| ----- | ---------- | ----- | ------------ |----------- |---------- |------- |--------- | -------- | ------- | ------ |
 | Tiny  | 640 | 64 | 16 | Yes | 0.33 | 0.07 | 0.12 | 0.1400 | 22.19 | [terminal](trainOutput/yolov4-tiny-pretrained-colab-640.png) |
 | Tiny  | 640 | 64 | 16 | No  | 0.43 | 0.10 | 0.17 | 0.1194 | 28.81 | [terminal](trainOutput/yolov4-tiny-no-pretrained-colab-640.png) |
 
