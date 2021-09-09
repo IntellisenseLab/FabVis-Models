@@ -1,4 +1,4 @@
-# Fabvis-Models
+# FabVis-Models
 
 Clone the repository,
 
@@ -31,47 +31,53 @@ Following commands will enable the training of models in coorindation of [Prepro
 ## Yolov4-Tiny
 
 ```sh
-./darknet detector train ../config/obj.data ../Fabvis-Models/config/yolov4-tiny.cfg ../Fabvis-Models/preTrainedWeights/yolov4-tiny.conv.29 -dont_show -mjpeg_port 8090 -map
+./darknet detector train ../config/obj.data ../FabVis-Models/config/yolov4-tiny.cfg ../FabVis-Models/preTrainedWeights/yolov4-tiny.conv.29 -dont_show -mjpeg_port 8090 -map
 ```
 
 ## Yolov4
 
 ```sh
-./darknet detector train ../config/obj.data ../Fabvis-Models/config/yolov4.cfg ../Fabvis-Models/preTrainedWeights/yolov4.conv.137 -dont_show -mjpeg_port 8090 -map
+./darknet detector train ../config/obj.data ../FabVis-Models/config/yolov4.cfg ../FabVis-Models/preTrainedWeights/yolov4.conv.137 -dont_show -mjpeg_port 8090 -map
 ```
 
 ## Yolov4x-mish
 
 ```sh
-./darknet detector train ../config/obj.data ../Fabvis-Models/config/yolov4x-mish.cfg ../Fabvis-Models/preTrainedWeights/yolov4x-mish.conv.166 -dont_show -mjpeg_port 8090 -map
+./darknet detector train ../config/obj.data ../FabVis-Models/config/yolov4x-mish.cfg ../FabVis-Models/preTrainedWeights/yolov4x-mish.conv.166 -dont_show -mjpeg_port 8090 -map
 ```
 
 ## Yolov4-csp-swish
 
 ```sh
-./darknet detector train ../config/obj.data ../Fabvis-Models/config/yolov4-csp-swish.cfg ../Fabvis-Models/preTrainedWeights/yolov4-csp-swish.conv.164 -dont_show -mjpeg_port 8090 -map
+./darknet detector train ../config/obj.data ../FabVis-Models/config/yolov4-csp-swish.cfg ../FabVis-Models/preTrainedWeights/yolov4-csp-swish.conv.164 -dont_show -mjpeg_port 8090 -map
 ```
 
 ## Yolov4-csp-x-swish
 
 ```sh
-./darknet detector train ../config/obj.data ../Fabvis-Models/config/yolov4-csp-x-swish.cfg ../Fabvis-Models/preTrainedWeights/yolov4-csp-x-swish.conv.192 -dont_show -mjpeg_port 8090 -map
+./darknet detector train ../config/obj.data ../FabVis-Models/config/yolov4-csp-x-swish.cfg ../FabVis-Models/preTrainedWeights/yolov4-csp-x-swish.conv.192 -dont_show -mjpeg_port 8090 -map
 ```
 
 ## Yolov4-csp
 
 ```sh
-./darknet detector train ../config/obj.data ../Fabvis-Models/config/yolov4-csp.cfg ../Fabvis-Models/preTrainedWeights/yolov4-csp.conv.142 -dont_show -mjpeg_port 8090 -map
+./darknet detector train ../config/obj.data ../FabVis-Models/config/yolov4-csp.cfg ../FabVis-Models/preTrainedWeights/yolov4-csp.conv.142 -dont_show -mjpeg_port 8090 -map
 ```
 
 ## Yolov4-p5
 
 ```sh
-./darknet detector train ../config/obj.data ../Fabvis-Models/config/yolov4-p5.cfg ../Fabvis-Models/preTrainedWeights/yolov4-p5.conv.232 -dont_show -mjpeg_port 8090 -map
+./darknet detector train ../config/obj.data ../FabVis-Models/config/yolov4-p5.cfg ../FabVis-Models/preTrainedWeights/yolov4-p5.conv.232 -dont_show -mjpeg_port 8090 -map
 ```
 
 ## Yolov4-p6
 
 ```sh
-./darknet detector train ../config/obj.data ../Fabvis-Models/config/yolov4-p6.cfg ../Fabvis-Models/preTrainedWeights/yolov4-p6.conv.289 -dont_show -mjpeg_port 8090 -map
+./darknet detector train ../config/obj.data ../FabVis-Models/config/yolov4-p6.cfg ../FabVis-Models/preTrainedWeights/yolov4-p6.conv.289 -dont_show -mjpeg_port 8090 -map
+```
+
+## Yolov4-p7-mish
+
+```sh
+./darknet detector train ../config/obj.data ../FabVis-Models/config/cspx-p7-mish.cfg ../FabVis-Models/preTrainedWeights/cspx-p7-mish_hp.344.conv -dont_show -mjpeg_port 8090 -map
 ```
