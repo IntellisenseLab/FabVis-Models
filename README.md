@@ -71,5 +71,5 @@ Following commands will enable the training of models in coorindation of [Prepro
 ## Yolov4-p6
 
 ```sh
-./darknet detector train ../config/obj.data ../Fabvis-Models/config/yolov4-tiny.cfg ../Fabvis-Models/preTrainedWeights/yolov4-p6.conv.289 -dont_show -mjpeg_port 8090 -map
+./darknet detector train ../config/obj.data ../Fabvis-Models/config/yolov4-p6.cfg ../Fabvis-Models/preTrainedWeights/yolov4-p6.conv.289 -dont_show -mjpeg_port 8090 -map
 ```
