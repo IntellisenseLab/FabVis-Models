@@ -15,7 +15,7 @@ Download pretrained weight files from [here](https://drive.google.com/drive/fold
 
 ## Comparison of Resolution 
 
-Trained on Google Colab with nvidia P100 and V100. All the values range between 0 - 1
+Evaluating the effect of resolution on the performance of the model
 
 | Model | Reso lution | Batch | Sub divisions | Pre trained | Precision | Recall | F1 score | mAP @0.5 | Avg IoU | Output |
 | ----- | ----------- | ----- | ------------- |------------ |---------- |------- |--------- | -------- | ------- | ------ |
