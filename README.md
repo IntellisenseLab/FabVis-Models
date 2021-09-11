@@ -32,6 +32,18 @@ All the values range between 0 - 1
 
 ![Image](trainOutput/resolution-camparison.png)
 
+## Comparison of Models (Trained on Google Colab with nvidia P100 and V100 and rtx2080)
+
+All the values range between 0 - 1
+
+| Model | Reso lution | Batch | Sub divisions | Pre trained | Precision | Recall | F1 score | mAP @0.5 | Avg IoU | Output |
+| ----- | ----------- | ----- | ------------- |------------ |---------- |------- |--------- | -------- | ------- | ------ |
+| yolov4-Tiny | 320 | 64 | 16 | Yes | 0.45 | 0.14 | 0.22 | 0.1781 | 0.3002 | [terminal](trainOutput/yolov4-tiny-pretrained-colab-320.png) |
+| yolov4      | 320 | 64 | 16 | Yes | 0.76 | 0.50 | 0.60 | 0.1932 | 0.5899 | [terminal](trainOutput/yolov4-pretrained-320.png) |
+| yolov4-Tiny | 320 | 64 | 16 | No  | 0.43 | 0.12 | 0.18 | 0.1684 | 0.2948 | [terminal](trainOutput/yolov4-tiny-no-pretrained-colab-320.png) ||
+
+
+
 <br>
 
 # Model Train Commands
