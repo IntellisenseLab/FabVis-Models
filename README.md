@@ -38,8 +38,8 @@ All the values range between 0 - 1
 
 | Model | Reso lution | Batch | Sub divisions | Pre trained | Precision | Recall | F1 score | mAP @0.5 | Avg IoU | Output |
 | ----- | ----------- | ----- | ------------- |------------ |---------- |------- |--------- | -------- | ------- | ------ |
-| yolov4-Tiny | 320 | 64 | 16 | Yes | 0.45 | 0.14 | 0.22 | 0.1781 | 0.3002 | [terminal](trainOutput/yolov4-tiny-pretrained-colab-320.png) |
-| yolov4      | 320 | 64 | 16 | Yes | 0.76 | 0.50 | 0.60 | 0.1932 | 0.5899 | [terminal](trainOutput/yolov4-pretrained-320.png) |
+| yolov4-Tiny | 416 | 16 | 8 | Yes | 0.21 | 0.08 | 0.11 | 0.1080 | 0.1422 | [terminal](trainOutput/yolov4-tiny-pretrained-416.png) |
+| yolov4      | 416 | 16 | 8 | Yes | 0.62 | 0.33 | 0.43 | 0.1846 | 0.4690 | [terminal](trainOutput/yolov4-pretrained-416.png) |
 
 
 <br>
