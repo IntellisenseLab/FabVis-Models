@@ -28,9 +28,7 @@ Evaluating the effect of resolution on the performance of the model
 | Tiny  | 320 | 64 | 16 | No  | 0.43 | 0.12 | 0.18 | 0.1684 | 0.2948 | [terminal](trainOutput/yolov4-tiny-no-pretrained-colab-320.png) |
 | Tiny  | 256 | 64 | 16 | No  | 0.33 | 0.10 | 0.15 | 0.1512 | 0.2194 | [terminal](trainOutput/yolov4-tiny-no-pretrained-colab-256.png) |
 
-
-
-![Image](trainOutput/resolution-camparison.png)
+![Image](trainOutput/resolution-comparison.png)
 
 ## Comparison of Models (Trained on Google Colab with nvidia P100 and V100 and rtx2080)
 
@@ -38,10 +36,13 @@ All the values range between 0 - 1
 
 | Model | Reso lution | Batch | Sub divisions | Pre trained | Precision | Recall | F1 score | mAP @0.5 | Avg IoU | Output |
 | ----- | ----------- | ----- | ------------- |------------ |---------- |------- |--------- | -------- | ------- | ------ |
-| yolov4-tiny   | 416 | 16 | 8 | Yes | 0.21 | 0.08 | 0.11 | 0.1080 | 0.1422 | [terminal](trainOutput/yolov4-tiny-pretrained-416.png) |
-| yolov4        | 416 | 16 | 8 | Yes | 0.62 | 0.33 | 0.43 | 0.1846 | 0.4690 | [terminal](trainOutput/yolov4-pretrained-416.png) |
-| yolov4x-mish  | 416 | 16 | 8 | Yes | 0.65 | 0.34 | 0.44 | 0.2312 | 0.4881 | [terminal](trainOutput/yolov4x-mish-pretrained-416.png) |
+| yolov4-tiny      | 416 | 16 | 8 | Yes | 0.21 | 0.08 | 0.11 | 0.1080 | 0.1422 | [terminal](trainOutput/yolov4-tiny-pretrained-416.png) |
+| yolov4           | 416 | 16 | 8 | Yes | 0.62 | 0.33 | 0.43 | 0.1846 | 0.4690 | [terminal](trainOutput/yolov4-pretrained-416.png) |
+| yolov4x-mish     | 416 | 16 | 8 | Yes | 0.65 | 0.34 | 0.44 | 0.2312 | 0.4881 | [terminal](trainOutput/yolov4x-mish-pretrained-416.png) |
+| yolov4-csp       | 416 | 16 | 8 | Yes | 0.77 | 0.36 | 0.49 | 0.2328 | 0.5720 | [terminal](trainOutput/yolov4-csp-pretrained-416.png) |
+| yolov4-csp-swish | 416 | 16 | 8 | Yes | 0.68 | 0.33 | 0.44 | 0.1546 | 0.5771 | [terminal](trainOutput/yolov4-csp-swish-pretrained-416.png) |
 
+![Image](trainOutput/model-comparison.png)
 
 <br>
 
