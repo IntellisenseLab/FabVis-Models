@@ -23,14 +23,31 @@ Evaluating the effect of resolution on the performance of the model
 | Tiny  | 416 | 64 | 16 | Yes | 0.36 | 0.10 | 0.16 | 0.1821 | 0.2474 | [terminal](trainOutput/yolov4-tiny-pretrained-colab-416.png) |
 | Tiny  | 320 | 64 | 16 | Yes | 0.45 | 0.14 | 0.22 | 0.1781 | 0.3002 | [terminal](trainOutput/yolov4-tiny-pretrained-colab-320.png) |
 | Tiny  | 256 | 64 | 16 | Yes | 0.33 | 0.09 | 0.15 | 0.1839 | 0.2221 | [terminal](trainOutput/yolov4-tiny-pretrained-colab-256.png) |
-| Tiny  | 640 | 64 | 16 | No  | 0.43 | 0.10 | 0.17 | 0.1194 | 0.2881 | [terminal](trainOutput/yolov4-tiny-no-pretrained-colab-640.png) |
-| Tiny  | 416 | 64 | 16 | No  | 0.45 | 0.10 | 0.16 | 0.1918 | 0.2978 | [terminal](trainOutput/yolov4-tiny-no-pretrained-colab-416.png) |
-| Tiny  | 320 | 64 | 16 | No  | 0.43 | 0.12 | 0.18 | 0.1684 | 0.2948 | [terminal](trainOutput/yolov4-tiny-no-pretrained-colab-320.png) |
-| Tiny  | 256 | 64 | 16 | No  | 0.33 | 0.10 | 0.15 | 0.1512 | 0.2194 | [terminal](trainOutput/yolov4-tiny-no-pretrained-colab-256.png) |
 
 ![Image](trainOutput/resolution-comparison.png)
 
-## Comparison of Models (Trained on Google Colab with nvidia P100 and V100 and rtx2080)
+<br>
+
+## Comparison of use of Weights 
+
+Evaluating the effect of resolution on the performance of the model
+
+| Model | Reso lution | Batch | Sub divisions | Pre trained | Precision | Recall | F1 score | mAP @0.5 | Avg IoU | Output |
+| ----- | ----------- | ----- | ------------- |------------ |---------- |------- |--------- | -------- | ------- | ------ |
+| Tiny  | 640 | 64 | 16 | Yes | 0.33 | 0.07 | 0.12 | 0.1400 | 0.2219 | [terminal](trainOutput/yolov4-tiny-pretrained-colab-640.png) |
+| Tiny  | 640 | 64 | 16 | No  | 0.43 | 0.10 | 0.17 | 0.1194 | 0.2881 | [terminal](trainOutput/yolov4-tiny-no-pretrained-colab-640.png) |
+| Tiny  | 416 | 64 | 16 | Yes | 0.36 | 0.10 | 0.16 | 0.1821 | 0.2474 | [terminal](trainOutput/yolov4-tiny-pretrained-colab-416.png) |
+| Tiny  | 416 | 64 | 16 | No  | 0.45 | 0.10 | 0.16 | 0.1918 | 0.2978 | [terminal](trainOutput/yolov4-tiny-no-pretrained-colab-416.png) |
+| Tiny  | 320 | 64 | 16 | Yes | 0.45 | 0.14 | 0.22 | 0.1781 | 0.3002 | [terminal](trainOutput/yolov4-tiny-pretrained-colab-320.png) |
+| Tiny  | 320 | 64 | 16 | No  | 0.43 | 0.12 | 0.18 | 0.1684 | 0.2948 | [terminal](trainOutput/yolov4-tiny-no-pretrained-colab-320.png) |
+| Tiny  | 256 | 64 | 16 | Yes | 0.33 | 0.09 | 0.15 | 0.1839 | 0.2221 | [terminal](trainOutput/yolov4-tiny-pretrained-colab-256.png) |
+| Tiny  | 256 | 64 | 16 | No  | 0.33 | 0.10 | 0.15 | 0.1512 | 0.2194 | [terminal](trainOutput/yolov4-tiny-no-pretrained-colab-256.png) |
+
+![Image](trainOutput/weight-comparison.png)
+
+<br>
+
+## Comparison of Models
 
 All the values range between 0 - 1
 
@@ -47,6 +64,20 @@ All the values range between 0 - 1
 | yolov4-p5          | 896 | 16 | 8 | Yes | 0.68 | 0.41 | 0.51 | 0.3619 | 0.5559 | [terminal](trainOutput/yolov4-p5-pretrained-896.png) |
 
 ![Image](trainOutput/model-comparison.png)
+
+<br>
+
+## Comparison of Batch size and subdivision size
+
+All the values range between 0 - 1
+
+| Model | Reso lution | Batch | Sub divisions | Pre trained | Precision | Recall | F1 score | mAP @0.5 | Avg IoU | Output |
+| ----- | ----------- | ----- | ------------- |------------ |---------- |------- |--------- | -------- | ------- | ------ |
+| yolov4-tiny  | 416 | 16 | 8  | Yes | 0.21 | 0.08 | 0.11 | 0.1080 | 0.1422 | [terminal](trainOutput/yolov4-tiny-pretrained-416.png) |
+| yolov4-tiny  | 416 | 64 | 16 | Yes | 0.36 | 0.10 | 0.16 | 0.1821 | 0.2474 | [terminal](trainOutput/yolov4-tiny-pretrained-colab-416.png) |
+
+
+![Image](trainOutput/batch_subdivision-comparison.png)
 
 <br>
 
