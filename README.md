@@ -42,6 +42,8 @@ All the values range between 0 - 1
 | yolov4-csp         | 416 | 16 | 8 | Yes | 0.77 | 0.36 | 0.49 | 0.2328 | 0.5720 | [terminal](trainOutput/yolov4-csp-pretrained-416.png) |
 | yolov4-csp-swish   | 416 | 16 | 8 | Yes | 0.68 | 0.33 | 0.44 | 0.1546 | 0.5771 | [terminal](trainOutput/yolov4-csp-swish-pretrained-416.png) |
 | yolov4-csp-x-swish | 416 | 16 | 8 | Yes | 0.68 | 0.33 | 0.45 | 0.0955 | 0.5172 | [terminal](trainOutput/yolov4-csp-x-swish-pretrained-416.png) |
+| yolov4-csp-swish   | 640 | 16 | 8 | Yes | 0.68 | 0.45 | 0.54 | 0.1464 | 0.5052 | [terminal](trainOutput/yolov4-csp-swish-pretrained-640.png) |
+| yolov4-csp-x-swish | 640 | 16 | 8 | Yes | 0.71 | 0.43 | 0.54 | 0.1798 | 0.5329 | [terminal](trainOutput/yolov4-csp-x-swish-pretrained-640.png) |
 | yolov4-p5          | 896 | 16 | 8 | Yes | 0.68 | 0.41 | 0.51 | 0.3619 | 0.5559 | [terminal](trainOutput/yolov4-p5-pretrained-896.png) |
 
 ![Image](trainOutput/model-comparison.png)
