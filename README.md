@@ -56,7 +56,7 @@ All the values range between 0 - 1
 | yolov4-tiny        | 416 | 16 | 8 | Yes | 0.21 | 0.08 | 0.11 | 0.1080 | 0.1422 | [terminal](trainOutput/yolov4-tiny-pretrained-416.png) |
 | yolov4-tiny        | 640 | 16 | 8 | Yes | 0.35 | 0.09 | 0.14 | 0.1512 | 0.2455 | [terminal](trainOutput/yolov4-tiny-pretrained-640.png) |
 | yolov4             | 416 | 16 | 8 | Yes | 0.62 | 0.33 | 0.43 | 0.1846 | 0.4690 | [terminal](trainOutput/yolov4-pretrained-416.png) |
-| yolov4             | 640 | 16 | 8 | Yes | 0.62 | 0.33 | 0.43 | 0.1846 | 0.4690 | [terminal](trainOutput/yolov4-pretrained-640.png) |
+| yolov4             | 640 | 16 | 8 | Yes | 0.73 | 0.44 | 0.55 | 0.2617 | 0.5446 | [terminal](trainOutput/yolov4-pretrained-640.png) |
 | yolov4x-mish       | 416 | 16 | 8 | Yes | 0.65 | 0.34 | 0.44 | 0.2312 | 0.4881 | [terminal](trainOutput/yolov4x-mish-pretrained-416.png) |
 | yolov4x-mish       | 640 | 16 | 8 | Yes | 0.72 | 0.41 | 0.53 | 0.2178 | 0.5433 | [terminal](trainOutput/yolov4x-mish-pretrained-640.png) |
 | yolov4-csp         | 416 | 16 | 8 | Yes | 0.77 | 0.36 | 0.49 | 0.2328 | 0.5720 | [terminal](trainOutput/yolov4-csp-pretrained-416.png) |
@@ -75,14 +75,19 @@ All the values range between 0 - 1
 ## Comparison of Batch size and subdivision size
 
 All the values range between 0 - 1
+Used Model is yolov4-tiny, and resolution is 416x416
 
-| Model | Reso lution | Batch | Sub divisions | Pre trained | Precision | Recall | F1 score | mAP @0.5 | Avg IoU | Output |
-| ----- | ----------- | ----- | ------------- |------------ |---------- |------- |--------- | -------- | ------- | ------ |
-| yolov4-tiny  | 416 | 16 | 8  | Yes | 0.21 | 0.08 | 0.11 | 0.1080 | 0.1422 | [terminal](trainOutput/yolov4-tiny-pretrained-16-8.png) |
-| yolov4-tiny  | 416 | 64 | 16 | Yes | 0.36 | 0.10 | 0.16 | 0.1821 | 0.2474 | [terminal](trainOutput/yolov4-tiny-pretrained-64-16.png) |
-| yolov4-tiny  | 416 | 64 | 8  | Yes | 0.34 | 0.11 | 0.16 | 0.1789 | 0.2176 | [terminal](trainOutput/yolov4-tiny-pretrained-64-8.png) |
-| yolov4-tiny  | 416 |128 | 32 | Yes | 0.30 | 0.10 | 0.15 | 0.1372 | 0.2079 | [terminal](trainOutput/yolov4-tiny-pretrained-128-32.png) |
-| yolov4-tiny  | 416 |128 | 16 | Yes | 0.36 | 0.11 | 0.17 | 0.1901 | 0.2387 | [terminal](trainOutput/yolov4-tiny-pretrained-128-16.png) |
+| Minibatch | Batch | Sub divisions | Pre trained | Precision | Recall | F1 score | mAP @0.5 | Avg IoU | Output |
+| ----- | --- | -- | --- |----- | ---- |----- |------- | ------ | --------------------------------------------- |
+|   2   |  16 | 8  | Yes | 0.21 | 0.08 | 0.11 | 0.1080 | 0.1422 | [terminal](trainOutput/yolov4-tiny-pretrained-16-8.png) |
+|   4   |  64 | 16 | Yes | 0.36 | 0.10 | 0.16 | 0.1821 | 0.2474 | [terminal](trainOutput/yolov4-tiny-pretrained-64-16.png) |
+|   8   |  64 | 8  | Yes | 0.34 | 0.11 | 0.16 | 0.1789 | 0.2176 | [terminal](trainOutput/yolov4-tiny-pretrained-64-8.png) |
+|   4   | 128 | 32 | Yes | 0.30 | 0.10 | 0.15 | 0.1372 | 0.2079 | [terminal](trainOutput/yolov4-tiny-pretrained-128-32.png) |
+|   8   | 128 | 16 | Yes | 0.36 | 0.11 | 0.17 | 0.1901 | 0.2387 | [terminal](trainOutput/yolov4-tiny-pretrained-128-16.png) |
+|   16  | 128 | 8  | Yes | 0.29 | 0.09 | 0.14 | 0.1900 | 0.2015 | [terminal](trainOutput/yolov4-tiny-pretrained-128-8.png) |
+|   4   | 256 | 64 | Yes | 0.35 | 0.12 | 0.18 | 0.1256 | 0.2395 | [terminal](trainOutput/yolov4-tiny-pretrained-256-64.png) |
+|   8   | 256 | 32 | Yes | 0.30 | 0.11 | 0.16 | 0.1725 | 0.2068 | [terminal](trainOutput/yolov4-tiny-pretrained-256-32.png) |
+|   16  | 256 | 16 | Yes | 0.35 | 0.12 | 0.18 | 0.1256 | 0.2395 | [terminal](trainOutput/yolov4-tiny-pretrained-256-16.png) |
 
 
 ![Image](trainOutput/batch_subdivision-comparison.png)
