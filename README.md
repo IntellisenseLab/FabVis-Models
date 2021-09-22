@@ -87,12 +87,38 @@ Used Model is yolov4-tiny, and resolution is 416x416
 |   16  | 128 | 8  | Yes | 0.29 | 0.09 | 0.14 | 0.1900 | 0.2015 | [terminal](trainOutput/yolov4-tiny-pretrained-128-8.png) |
 |   4   | 256 | 64 | Yes | 0.35 | 0.12 | 0.18 | 0.1256 | 0.2395 | [terminal](trainOutput/yolov4-tiny-pretrained-256-64.png) |
 |   8   | 256 | 32 | Yes | 0.30 | 0.11 | 0.16 | 0.1725 | 0.2068 | [terminal](trainOutput/yolov4-tiny-pretrained-256-32.png) |
-|   16  | 256 | 16 | Yes | 0.35 | 0.12 | 0.18 | 0.1256 | 0.2395 | [terminal](trainOutput/yolov4-tiny-pretrained-256-16.png) |
+|   16  | 256 | 16 | Yes | 0.31 | 0.09 | 0.14 | 0.1210 | 0.2170 | [terminal](trainOutput/yolov4-tiny-pretrained-256-16.png) |
+|   32  | 256 | 8  | Yes | 0.32 | 0.10 | 0.16 | 0.1864 | 0.2205 | [terminal](trainOutput/yolov4-tiny-pretrained-256-8.png) |
 
 
 ![Image](trainOutput/batch_subdivision-comparison.png)
 
 <br>
+
+## Comparison of resource utilization of the largest models
+
+### Idle utilization
+
+![Image](trainOutput/idle_resource_utilization.png)
+
+### yolov4-p5 utilization
+
+- RAM Memory usage - ~1.8 GB
+- GPU Memory usage - ~3.5 GB
+- CPU count (used) - 1
+
+![Image](trainOutput/p5_resource_utilization.png)
+
+### yolov4-p6 utilization
+
+- RAM Memory usage - ~2.2 GB
+- GPU Memory usage - ~6.1 GB
+- CPU count (used) - 1
+
+![Image](trainOutput/p6_resource_utilization.png)
+
+<br>
+
 
 # Model Train Commands
 
