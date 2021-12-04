@@ -91,13 +91,13 @@ Used Model is yolov4-tiny, and resolution is 416x416
 |   32  | 256 | 8  | Yes | 0.32 | 0.10 | 0.16 | 0.1864 | 0.2205 | [terminal](trainOutput/yolov4-tiny-pretrained-256-8.png) |
 
 
-![Image](trainOutput/finalModelResult.png)
+![Image](trainOutput/batch_subdivision-comparison.png)
 
 <br>
 
 ## Comparison of Final Model
 
-![Image](trainOutput/batch_subdivision-comparison.png)
+![Image](trainOutput/finalModelResult.png)
 
 <br>
 
