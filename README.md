@@ -95,9 +95,29 @@ Used Model is yolov4-tiny, and resolution is 416x416
 
 <br>
 
-## Comparison of Final Model
+## Comparison of Final Model (Yolov4-p5 896x896)
 
-![Image](trainOutput/finalModelResult.png)
+### Batch/Subdivision diference
+
+![Image](trainOutput/final_models.png)
+
+<br>
+
+### Detection time confidence threshold variation
+
+![Image](trainOutput/threshold_variation.png)
+
+<br>
+
+### Detection time iou threshold variation
+
+![Image](trainOutput/iou_threshold_variation.png)
+
+<br>
+
+### Detection time confidence and iou threshold variation
+
+![Image](trainOutput/both_threshol_variation.png)
 
 <br>
 
